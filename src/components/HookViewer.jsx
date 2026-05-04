@@ -229,6 +229,20 @@ const HookViewer = () => {
           color: var(--text-secondary);
           line-height: 1.7;
         }
+
+        .markdown-body code {
+          background-color: var(--bg-tertiary);
+          color: var(--accent-primary);
+          padding: 2px 6px;
+          border-radius: 4px;
+          font-family: var(--font-mono);
+          font-size: 0.9em;
+        }
+
+        .markdown-body h3 {
+          color: var(--text-primary);
+          margin: 24px 0 12px;
+        }
       `}</style>
     </div>
   );

@@ -21,6 +21,7 @@ const CodeBlock = ({ code, language = 'javascript' }) => {
           margin: 0;
           padding: 20px;
           background-color: #1e1e1e;
+          color: #e2e8f0;
           border-radius: var(--radius-md);
           font-family: var(--font-mono);
           font-size: 0.9rem;
