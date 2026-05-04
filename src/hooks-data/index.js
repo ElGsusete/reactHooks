@@ -101,6 +101,34 @@ import UseSyncExternalStoreDemo from './useSyncExternalStore/demo';
 import { useSyncExternalStoreCode } from './useSyncExternalStore/code';
 import { useSyncExternalStoreDocs } from './useSyncExternalStore/docs';
 
+import UseDemo from './use/demo';
+import { useCode } from './use/code';
+import { useDocs } from './use/docs';
+
+import UseOptimisticDemo from './useOptimistic/demo';
+import { useOptimisticCode } from './useOptimistic/code';
+import { useOptimisticDocs } from './useOptimistic/docs';
+
+import UseFormStatusDemo from './useFormStatus/demo';
+import { useFormStatusCode } from './useFormStatus/code';
+import { useFormStatusDocs } from './useFormStatus/docs';
+
+import UseActionStateDemo from './useActionState/demo';
+import { useActionStateCode } from './useActionState/code';
+import { useActionStateDocs } from './useActionState/docs';
+
+import UseLocalStorageDemo from './useLocalStorage/demo';
+import { useLocalStorageCode } from './useLocalStorage/code';
+import { useLocalStorageDocs } from './useLocalStorage/docs';
+
+import UseFetchDemo from './useFetch/demo';
+import { useFetchCode } from './useFetch/code';
+import { useFetchDocs } from './useFetch/docs';
+
+import UseDebounceDemo from './useDebounce/demo';
+import { useDebounceCode } from './useDebounce/code';
+import { useDebounceDocs } from './useDebounce/docs';
+
 export const hooksRegistry = {
   useState: {
     name: 'useState',
@@ -221,6 +249,62 @@ export const hooksRegistry = {
     demo: UseSyncExternalStoreDemo,
     code: useSyncExternalStoreCode,
     guide: useSyncExternalStoreDocs
+  },
+  use: {
+    name: 'use',
+    description: 'Nuevo hook para leer recursos como promesas o contextos de forma condicional.',
+    docs: 'https://react.dev/reference/react/use',
+    demo: UseDemo,
+    code: useCode,
+    guide: useDocs
+  },
+  useOptimistic: {
+    name: 'useOptimistic',
+    description: 'Permite mostrar un estado optimista durante una acción asíncrona.',
+    docs: 'https://react.dev/reference/react/useOptimistic',
+    demo: UseOptimisticDemo,
+    code: useOptimisticCode,
+    guide: useOptimisticDocs
+  },
+  useFormStatus: {
+    name: 'useFormStatus',
+    description: 'Proporciona información sobre el estado de envío del formulario padre.',
+    docs: 'https://react.dev/reference/react/useFormStatus',
+    demo: UseFormStatusDemo,
+    code: useFormStatusCode,
+    guide: useFormStatusDocs
+  },
+  useActionState: {
+    name: 'useActionState',
+    description: 'Gestiona el estado y los errores de una acción de formulario.',
+    docs: 'https://react.dev/reference/react/useActionState',
+    demo: UseActionStateDemo,
+    code: useActionStateCode,
+    guide: useActionStateDocs
+  },
+  useLocalStorage: {
+    name: 'useLocalStorage',
+    description: 'Sincroniza el estado de React con el almacenamiento local del navegador.',
+    docs: 'https://usehooks.com/uselocalstorage',
+    demo: UseLocalStorageDemo,
+    code: useLocalStorageCode,
+    guide: useLocalStorageDocs
+  },
+  useFetch: {
+    name: 'useFetch',
+    description: 'Abstrae la lógica de peticiones HTTP, carga y errores.',
+    docs: 'https://usehooks.com/usefetch',
+    demo: UseFetchDemo,
+    code: useFetchCode,
+    guide: useFetchDocs
+  },
+  useDebounce: {
+    name: 'useDebounce',
+    description: 'Retrasa la actualización de un valor para optimizar rendimiento.',
+    docs: 'https://usehooks.com/usedebounce',
+    demo: UseDebounceDemo,
+    code: useDebounceCode,
+    guide: useDebounceDocs
   },
   // We will populate this as we build
 };
