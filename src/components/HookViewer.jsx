@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ExternalLink, Play, Code, BookOpen } from 'lucide-react';
+import GuideRenderer from './GuideRenderer';
 import { hooksRegistry } from '../hooks-data';
 import CodeBlock from './CodeBlock';
 
@@ -87,15 +88,8 @@ const HookViewer = () => {
         )}
 
         {activeTab === 'docs' && (
-          <div className="docs-pane card">
-            <div className="pane-header">¿Cuándo usar {hookId}?</div>
-            <div className="pane-content markdown-body">
-              {hookData.guide ? (
-                <div dangerouslySetInnerHTML={{ __html: hookData.guide.replace(/\n/g, '<br/>') }} />
-              ) : (
-                <p>Aquí irá una explicación detallada de los casos de uso, mejores prácticas y "gotchas" de este hook.</p>
-              )}
-            </div>
+          <div className="docs-pane">
+            <GuideRenderer content={hookData.guide} hookName={hookId} />
           </div>
         )}
       </div>
